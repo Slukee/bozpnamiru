@@ -192,17 +192,17 @@ p { margin: 0 0 1em; }
   position: absolute;
   z-index: -2; /* pod skvrnou */
   left: 42%;
-  top: -40px;
+  top: -175px;
   width: max(820px, 78vw);
   aspect-ratio: 120 / 106;
-  background: url("warning.svg?v=5") left top / contain no-repeat;
-  opacity: .08;
+  background: url("warning.svg?v=6") left top / contain no-repeat;
+  opacity: .06;
   pointer-events: none;
 }
 @media (max-width: 760px) {
-  .hero::after { left: -20px; top: 120px; width: 560px; opacity: .07; }
+  .hero::after { left: -20px; top: 10px; width: 560px; opacity: .055; }
 }
-.hero h1 { max-width: 14ch; margin-bottom: .2em; font-size: clamp(2.4rem, 6.4vw, 4.8rem); }
+.hero h1 { white-space: nowrap; margin-bottom: .2em; font-size: clamp(1.6rem, 7.2vw, 5rem); }
 .hero .role {
   font-size: clamp(1.3rem, 2.6vw, 1.9rem);
   font-weight: 700;
