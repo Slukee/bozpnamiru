@@ -191,16 +191,16 @@ p { margin: 0 0 1em; }
   content: "";
   position: absolute;
   z-index: -2; /* pod skvrnou */
-  right: 2%;
-  top: 30px;
-  width: clamp(260px, 36vw, 480px);
+  left: 42%;
+  top: -40px;
+  width: max(820px, 78vw);
   aspect-ratio: 120 / 106;
-  background: url("warning.svg?v=3") center / contain no-repeat;
-  opacity: .13;
+  background: url("warning.svg?v=5") left top / contain no-repeat;
+  opacity: .08;
   pointer-events: none;
 }
 @media (max-width: 760px) {
-  .hero::after { right: -40px; top: 20px; width: 260px; }
+  .hero::after { left: -20px; top: 120px; width: 560px; opacity: .07; }
 }
 .hero h1 { max-width: 14ch; margin-bottom: .2em; font-size: clamp(2.4rem, 6.4vw, 4.8rem); }
 .hero .role {
