@@ -202,7 +202,13 @@ p { margin: 0 0 1em; }
 @media (max-width: 760px) {
   .hero::after { right: -40px; top: 20px; width: 260px; }
 }
-.hero h1 { max-width: 12ch; margin-bottom: .35em; }
+.hero h1 { max-width: 14ch; margin-bottom: .2em; font-size: clamp(2.4rem, 6.4vw, 4.8rem); }
+.hero .role {
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.2rem;
+}
 .hero .lead {
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   max-width: 38ch;
