@@ -168,7 +168,7 @@ p { margin: 0 0 1em; }
 /* ---------- Úvod ---------- */
 .hero {
   position: relative;
-  padding: clamp(64px, 12vw, 140px) 0 clamp(64px, 10vw, 120px);
+  padding: clamp(36px, 6vw, 72px) 0 clamp(64px, 10vw, 120px);
   isolation: isolate;
   overflow: hidden;
 }
@@ -192,7 +192,7 @@ p { margin: 0 0 1em; }
   position: absolute;
   z-index: -2; /* pod skvrnou */
   left: 42%;
-  top: -175px;
+  top: -225px;
   width: max(820px, 78vw);
   aspect-ratio: 120 / 106;
   background: url("warning.svg?v=6") left top / contain no-repeat;
