@@ -222,7 +222,7 @@
       <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <!-- Veřejný přístupový klíč Web3Forms (zprávy chodí na sedlackova.bozp@gmail.com). Po přechodu na bozpnamiru.cz změnit redirect níže. -->
         <input type="hidden" name="access_key" value="8492be6b-2403-4255-b767-b982b2ebc6d7">
-        <input type="hidden" name="subject" value="Nová poptávka z webu bozpnamiru.cz">
+        <input type="hidden" name="subject" value="Nová poptávka z webu BOZP na míru">
         <input type="hidden" name="from_name" value="Web BOZP na míru">
         <input type="hidden" name="redirect" value="https://slukee.github.io/bozpnamiru/dekujeme.html">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -230,11 +230,11 @@
         <div class="form-row">
           <div class="field">
             <label for="f-name">Jméno a příjmení</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <input id="f-name" name="Jméno" type="text" autocomplete="name" required>
           </div>
           <div class="field">
             <label for="f-company">Firma <span class="opt">(nepovinné)</span></label>
-            <input id="f-company" name="company" type="text" autocomplete="organization">
+            <input id="f-company" name="Firma" type="text" autocomplete="organization">
           </div>
         </div>
         <div class="form-row">
@@ -244,12 +244,12 @@
           </div>
           <div class="field">
             <label for="f-phone">Telefon <span class="opt">(nepovinné)</span></label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+            <input id="f-phone" name="Telefon" type="tel" autocomplete="tel">
           </div>
         </div>
         <div class="field">
           <label for="f-service">O co máte zájem</label>
-          <select id="f-service" name="service">
+          <select id="f-service" name="Služba">
             <option>Zatím nevím, chci poradit</option>
             <option>Kontrola provozu</option>
             <option>Vyhodnocení rizik</option>
@@ -264,7 +264,7 @@
         </div>
         <div class="field">
           <label for="f-message">Zpráva</label>
-          <textarea id="f-message" name="message" required placeholder="Např. obor, počet zaměstnanců a co potřebujete vyřešit."></textarea>
+          <textarea id="f-message" name="Zpráva" required placeholder="Např. obor, počet zaměstnanců a co potřebujete vyřešit."></textarea>
         </div>
         <p class="form-note">Odesláním formuláře beru na vědomí, že údaje budou použity k vyřízení mého dotazu podle <a href="zasady-ochrany-osobnich-udaju.html">zásad zpracování osobních údajů</a>.</p>
         <button class="btn" type="submit">Odeslat poptávku</button>
