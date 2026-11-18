@@ -20,7 +20,7 @@ Vše zvýrazněné žlutě (`class="placeholder"`):
 
 ## Formulář (Web3Forms)
 1. Na https://web3forms.com zadat e-mail **sedlackova.bozp@gmail.com** → přijde přístupový klíč.
-2. V `index.html` nahradit `WEB3FORMS_ACCESS_KEY` tímto klíčem.
+2. Klíč je už vložený v `index.html`. Po přechodu na doménu bozpnamiru.cz změnit v `index.html` hodnotu `redirect`.
 3. Zprávy z formuláře pak chodí rovnou do jejího Gmailu. Zdarma do 250 zpráv měsíčně.
 
 ## Nasazení na Cloudflare Pages
