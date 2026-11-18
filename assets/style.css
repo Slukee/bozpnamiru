@@ -195,8 +195,8 @@ p { margin: 0 0 1em; }
   top: 30px;
   width: clamp(260px, 36vw, 480px);
   aspect-ratio: 120 / 106;
-  background: url("warning.svg") center / contain no-repeat;
-  opacity: .07;
+  background: url("warning.svg?v=3") center / contain no-repeat;
+  opacity: .13;
   pointer-events: none;
 }
 @media (max-width: 760px) {
