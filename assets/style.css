@@ -188,17 +188,19 @@ p { margin: 0 0 1em; }
 }
 /* Jemný vykřičník v pozadí */
 .hero::after {
-  content: "!";
+  content: "";
   position: absolute;
-  z-index: -1;
-  right: 8%;
-  bottom: -40px;
-  font-size: clamp(16rem, 34vw, 30rem);
-  font-weight: 900;
-  line-height: 1;
-  color: var(--ink);
-  opacity: .04;
+  z-index: -2; /* pod skvrnou */
+  right: 2%;
+  top: 30px;
+  width: clamp(260px, 36vw, 480px);
+  aspect-ratio: 120 / 106;
+  background: url("warning.svg") center / contain no-repeat;
+  opacity: .07;
   pointer-events: none;
+}
+@media (max-width: 760px) {
+  .hero::after { right: -40px; top: 20px; width: 260px; }
 }
 .hero h1 { max-width: 12ch; margin-bottom: .35em; }
 .hero .lead {
@@ -525,20 +527,6 @@ p { margin: 0 0 1em; }
 @media (max-width: 600px) {
   .acc summary { grid-template-columns: 32px 1fr 32px; gap: 12px; }
   .acc-body { padding: 0 0 24px 44px; }
-}
-
-/* ---------- O mně (s fotkou) ---------- */
-.about { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
-.about-head { display: flex; flex-direction: column; gap: 24px; }
-.avatar {
-  width: 140px; height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 0 6px var(--bg), 0 0 0 8px var(--peach);
-}
-@media (max-width: 860px) {
-  .about-head { flex-direction: row; align-items: center; }
-  .avatar { width: 100px; height: 100px; flex: none; }
 }
 
 /* První konzultace zdarma */
