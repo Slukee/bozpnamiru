@@ -208,7 +208,7 @@ p { margin: 0 0 1em; }
   pointer-events: none;
 }
 @media (max-width: 760px) {
-  .hero::after { left: auto; right: -170px; top: auto; bottom: -14px; width: 520px; opacity: .055; }
+  .hero::after { left: auto; right: -300px; top: auto; bottom: -20px; width: 760px; opacity: .035; }
 }
 .hero h1 { white-space: nowrap; margin-bottom: .3em; font-size: clamp(1.6rem, 7.2vw, 5rem); }
 .hero .role {
@@ -608,6 +608,10 @@ a, button, summary { -webkit-tap-highlight-color: transparent; }
   .contact-list a { font-size: 1.25rem; }
   .form { padding: 22px 18px; }
 
-  .site-footer { padding-top: 40px; }
-  .footer-grid { gap: 24px; }
+  .site-footer { padding: 28px 0 24px; font-size: .78rem; line-height: 1.45; }
+  .footer-grid { grid-template-columns: 1fr; gap: 12px; }
+  .site-footer .logo { font-size: 1rem; margin-bottom: 4px; }
+  .site-footer h4 { font-size: .7rem; margin-bottom: 4px; }
+  .site-footer p { margin: 0 0 .15em; }
+  .footer-bottom { margin-top: 16px; padding-top: 12px; gap: 6px; font-size: .75rem; }
 }
