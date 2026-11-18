@@ -139,6 +139,9 @@ p { margin: 0 0 1em; }
 
 .menu-toggle {
   display: none;
+  color: var(--ink);
+  -webkit-appearance: none;
+  appearance: none;
   background: none;
   border: 0;
   font: inherit;
@@ -205,7 +208,7 @@ p { margin: 0 0 1em; }
   pointer-events: none;
 }
 @media (max-width: 760px) {
-  .hero::after { left: -20px; top: auto; bottom: 40px; width: 560px; opacity: .055; }
+  .hero::after { left: auto; right: -170px; top: auto; bottom: -14px; width: 520px; opacity: .055; }
 }
 .hero h1 { white-space: nowrap; margin-bottom: .3em; font-size: clamp(1.6rem, 7.2vw, 5rem); }
 .hero .role {
@@ -585,9 +588,9 @@ a, button, summary { -webkit-tap-highlight-color: transparent; }
 
   .hero { padding-top: 32px; padding-bottom: 56px; }
   .hero .lead { font-size: 1.1rem; margin-bottom: 1.6rem; }
-  .hero .actions { flex-direction: column; }
-  .hero .actions .btn { justify-content: center; width: 100%; padding: 1em 1.5em; }
-  .free { margin-top: 20px; font-size: .98rem; }
+  .hero .actions { gap: 10px; }
+  .hero .actions .btn { padding: .7em 1em; font-size: .92rem; }
+  .free { display: block; margin-top: 18px; padding: .55em .85em; font-size: .9rem; border-radius: 10px; }
 
   .nav a { font-size: 1.2rem; padding: 12px 0; }
   .nav .btn { font-size: 1.05rem; }
@@ -604,7 +607,6 @@ a, button, summary { -webkit-tap-highlight-color: transparent; }
 
   .contact-list a { font-size: 1.25rem; }
   .form { padding: 22px 18px; }
-  .form .btn { width: 100%; justify-content: center; padding: 1em; }
 
   .site-footer { padding-top: 40px; }
   .footer-grid { gap: 24px; }
